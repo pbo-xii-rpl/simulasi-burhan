@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="bg-blue-600">
+    <div class="flex">
+        <img class="mx-36 py-12"src="/img/pin.png" alt="">
+    </div>
+   
+    <div class="text-white font-bold text-2xl text-center mt-52">
+      <h1 class="">MASUKAN PIN</h1>
+      <form action="" onsubmit="" class="mt-20">
+          <input type="password" id="pin" required name="pin" value="" class="text-black">
+          <input type="submit" class="" value="ENTER">
+      </form>
+      <h1 class="py-24">TEKAN 'ENTER' JIKA SELESAI<br>MASUKAN PIN</h1>
+  </div>
+ </body>
+<form action="" onsubmit="pin()">
+  <input type="password" required class="text-black" id="angkapin">
+  <input type="submit" class="" value="ENTER">
+</form>
+<script>
+  function pin() {
+    let pin = document.gentlementById("angkapin").value;
+    // ini untuk mengambil value dari input type password berdasarkan id
+    if (pin == '123456') {
+      window.open('/pages/4.ambiltunai.html', 'blank');
+      window.close();
+    } else {
+      alert('pin yang anda masukan salah')
+    }
+  };
+</script>
+</html>
